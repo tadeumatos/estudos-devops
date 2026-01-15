@@ -20,12 +20,12 @@ jobs:
 
       - name: 02-Configurar Node.js
         run:|
-          echo"Configurando Node.js versão {{$NODE_VERSION}}"
+          echo"Configurando Node.js versão ${{NODE_VERSION}}"
           ls -la .github/workflows
           echo""
           echo"Total de workflows" $(ls -l .github/workflows | wc -l  )"
 
-      -name:03-Elementos Obrigatorios
+      - name:03-Elementos Obrigatorios
         run:|
           echo"Elementos Obrigatorios em um workflow"
           echo""
